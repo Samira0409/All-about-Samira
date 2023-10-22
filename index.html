@@ -3,12 +3,15 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <style>
+      
 body {
   background-image: url('ines-alvarez-fdez-unsplash.jpg');
 }
 </style>
     </head>
 <body>
+ 
+ 
    <main class="grid fade-in">
      <div class="header item1">
   <h1>Healing and Empowerment for Women</h1>
@@ -16,31 +19,49 @@ body {
     <p class="caption">Welcome to a safe space for women!</p>
 </div>
  
-<div class="item2">
+<div class="item item2 down">
   <p >
-    <p><b style="color:blueviolet">Hello everyone!</b> I am Samira Davis. I am a native of Memphis,TN. I just wanted to create a space of empowerment and healing for all women. My journey to healing may not directly reflect the next person's journey. However, the destination will be the same for everyone! On this site, I will provide inspirational quotes, crystal recommendations, and <a href "https://www.zoom.com/">live zoom sessions</a> for meetings. If you'd like more contact information about me, please feel free to click <a href="https://www.pinterest.com/">here</a>.</p>
+    <p>Hello everyone! I am Samira Davis. I am a native of Memphis,TN. I just wanted to create a space of empowerment and healing for all women. My journey to healing may not directly reflect the next person's journey. However, the destination will be the same for everyone! On this site, I will provide inspirational quotes, crystal recommendations, and <a href "https://www.zoom.com/">live zoom sessions</a> for meetings. If you'd like more contact information about me, please feel free to click <a href="https://www.pinterest.com/">here</a>.</p>
     </div>
-  <div class="item3">
+  <div class="item item3 up">
     <p>This site is going to function mostly as a blog. I am not the best at journaling so hopefully this will help me attempt to become better at it! I will post blogs about trendy topics, news, and anything spiritual. My first entry will detail my journey to becoming a software developer. I currently work at Amazon. One day, I picked up an extra shift and they were having a career choice fair. Luckily, one of the courses offered was for Software Development. I nervously signed up for it and here we are as a Software Development Cohort 4 fellow.</p>
     </div>
-      <div class="item4">
-    <p>I have learned so much already in this course! I enjoy experimenting with the style tags and changing background colors. I also get a kick out of uploading images and importing music. It can be challenging when it comes to balancing this course with other obligations like work and motherhood. However, I am here for the ride and I know that this is going to be a life changing experience!</p>
+      <div class="item item4 down">
+    <p>I have learned so much already in this course! I enjoy experimenting with the style tags and changing background colors. I also get a kick out of uploading images and importing music. It can be challenging when it comes to balancing this course with other obligations like work and motherhood. However, I am here for the ride and I know that this is going to be a life changing experience! You can check out one of my projects <a href "https://codepen.io/Samira-Davis/pen/eYbjWqQ/">here</a>.</p>
 </div>
   
 <div class="footer item5" style="background:#D4E2D4">
+  
+    
   <h4><b>Contact</b></h4>
-<form>
-  <form action="example.html"method="get">
+  
+<form id="exampleForm">
     <p><b>First name:</b></p>
-    <input class="placeholder" type="text" id="PI" name="PI" placeholder="First name">
+    <input class="placeholder" type="text" id="PI" name="PI" class="form-control" required>
+    
+   <small class="error-msg invalid-feedback">Required</small>
     <p><b>Last name:</b></p>
-    <input class="placeholder" type="text" id="PI" name="PI" placeholder="Last name">
+    <input class="placeholder" type="text" id="PI" name="PI" class="form-control" required>
+    <small class="error-msg invalid-feedback">Required</small>
+    
     <p></b>Email:</b></p>
-    <input class="placeholder" type="text" id="PI" name"PI" placeholder="Email">
+    <input class="placeholder" type="text" id="PI" name"PI" class="form-control" required>
+     <small class="error-msg invalid-feedback">Required</small>
+     
     <p><b>Telephone number:</b></p>
-    <input class="placeholder" type="text" id="PI" name"PI" placeholder="Telephone number"><br>
+    <input class="placeholder" type="text" id="PI" name"PI" class="form-control" required>
+     <small class="error-msg invalid-feedback">Required</small>
+     
+     <br>
+     <div id="form-submitted-msg">Form successfully submitted!</div>
 
-<input class="hover" type="submit" value="Submit">
+<input class="hover" type="submit" id="Submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;
+     <label class="toggle-switch">
+      <input type="checkbox" id="mode-toggle">
+       <br>
+        
+      <span class="slider"></span>
+    </label>
 
 
 
@@ -50,6 +71,7 @@ body {
 
 
   </div>
+  <script src="script.js"></script>
 </main>
 
 </body>
